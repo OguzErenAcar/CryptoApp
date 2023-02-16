@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "979572911106",
+    "project_id": "cyrpto-66e76",
+    "storage_bucket": "cyrpto-66e76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979572911106:android:48e0ed7033d92f15640b1b",
+        "android_client_info": {
+          "package_name": "com.example.crypto_news_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979572911106-hisn9s62p097c6r95i048rvb2ldk29do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnaolfsuvdE3j2DqdpPkvRvbuGAf-7ksE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979572911106-hisn9s62p097c6r95i048rvb2ldk29do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

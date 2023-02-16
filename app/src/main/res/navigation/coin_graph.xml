@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coin_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.crypto_news_app.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_coinInfoFragment"
+            app:destination="@id/coinInfoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/coinInfoFragment"
+        android:name="com.example.crypto_news_app.view.CoinDetailsFragment"
+        android:label="fragment_coin_info"
+        tools:layout="@layout/fragment_coin_info" >
+        <action
+            android:id="@+id/action_coinInfoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="coin_id_arguman"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.crypto_news_app.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_profile_to_coinInfoFragment"
+            app:destination="@id/coinInfoFragment" />
+    </fragment>
+</navigation>

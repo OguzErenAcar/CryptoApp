@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#227C70"
+    tools:context=".view.CoinDetailsFragment">
+
+
+    <LinearLayout
+
+        android:id="@+id/coin_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/coin_IV"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:foregroundGravity="center"
+                app:shapeAppearanceOverlay="@style/Circular"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:id="@+id/relativela"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/name_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+
+                    android:id="@+id/CoinName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/star"
+                    app:tint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="#3EE444"
+                android:textSize="18dp"
+                android:layout_below="@id/name_ll"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tanim_tittle"
+            android:text="Description:"
+            android:textColor="#E6E2C3"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:justificationMode="inter_word"
+            android:layout_marginHorizontal="15dp"
+            android:textSize="16sp"
+            android:layout_below="@+id/tanim_tittle"
+            android:id="@+id/tanim"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor nulla sit amet neque facilisis, eu semper ante tempor. Maecenas pretium suscipit neque, aliquet lobortis lectus. In turpis neque, malesuada vitae consequat id, vestibulum vitae ex. Pellentesque suscipit ante nec sapien faucibus, at sollicitudin risus feugiat. Morbi pharetra nec mauris sagittis iaculis. Duis tempor lectus id ligula efficitur, ut dapibus massa pretium. Vivamus quis odio auctor"
+            >
+        </TextView>
+
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+
+           android:id="@+id/text1"
+           android:layout_alignParentLeft="true"
+           android:layout_marginStart="25dp"
+           android:layout_marginTop="25dp"
+           android:textSize="20sp"
+           android:text="text1"
+           android:textColor="#D1C9C9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </TextView>
+       <TextView
+           android:id="@+id/text2"
+           android:layout_below="@id/text1"
+           android:layout_alignParentLeft="true"
+           android:layout_marginStart="25dp"
+           android:layout_marginTop="15dp"
+           android:textSize="20sp"
+           android:text="text1"
+           android:textColor="#D1C9C9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </TextView>
+       <TextView
+           android:id="@+id/text3"
+           android:layout_below="@+id/text2"
+           android:layout_alignParentLeft="true"
+           android:layout_marginStart="25dp"
+           android:layout_marginTop="15dp"
+           android:textSize="20sp"
+           android:text="text1"
+           android:textColor="#D1C9C9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </TextView>
+       <TextView
+           android:id="@+id/text4"
+           android:layout_below="@id/text3"
+           android:layout_alignParentLeft="true"
+           android:layout_marginStart="25dp"
+           android:layout_marginTop="15dp"
+           android:textSize="20sp"
+           android:text="text1"
+           android:textColor="#D1C9C9"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       </TextView>
+   </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>
